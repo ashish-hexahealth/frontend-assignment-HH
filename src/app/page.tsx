@@ -10,7 +10,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center mt-10">
       <DynamicForm initialData={form1Configs} />
       <FormModalSystem initialData={form2Configs} />
-      <div className="bg-sky-100 border-sky-400 p-4 rounded-md">
+      <div className="bg-sky-100 border-sky-400 p-4 w-1/2 rounded-md">
         <HexaHealthRouting data={routingData} />
       </div>
     </main>
