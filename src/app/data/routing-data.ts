@@ -1,0 +1,40 @@
+export const routingData = {
+  treatment: [
+    '/treatment/piles-laser-treatment',
+    '/treatment/piles-laser-treatment/delhi',
+    '/treatment/piles-laser-treatment/cost-in-india',
+    '/treatment/piles-laser-treatment/cost-in-delhi',
+    '/hi/treatment/piles-laser-treatment',
+  ],
+  condition: ['/condition/piles', '/hi/condition/piles'],
+  doctor: [
+    '/delhi/doctor/dr-aman-priya-khanna-general-surgery',
+    '/mumbai/doctor/dr-sharma-orthopedic',
+    '/bangalore/doctor/dr-verma-cardiology',
+  ],
+  hospital: [
+    '/hospital/xyz-hospital',
+    '/hospital/xyz-hospital/doctors',
+    '/hospital/xyz-hospital/reviews',
+    '/hospital/abc-hospital',
+    '/hospital/abc-hospital/doctors',
+    '/hospital/abc-hospital/reviews',
+  ],
+  blog: [
+    '/blog',
+    '/blog/types-of-breast-cancer',
+    '/blog/how-to-choose-best-surgeon',
+    '/hi/blog/types-of-breast-cancer',
+    '/hi/blog/how-to-choose-best-surgeon',
+  ],
+  marketing: [
+    '/marketing/cataract-delhi',
+    '/marketing/superthin/cataract-delhi',
+    '/marketing/faqthin/cataract-delhi',
+    '/marketing/cost/cataract-delhi',
+    '/marketing/doctor/cataract-delhi',
+    '/marketing/lens/cataract-delhi',
+    '/marketing/cataract-mumbai',
+    '/marketing/superthin/cataract-mumbai',
+  ],
+}
