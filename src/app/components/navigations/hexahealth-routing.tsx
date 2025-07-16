@@ -8,7 +8,7 @@ export default function HexaHealthRouting({
 }) {
   {
     return Object.entries(data).map(([key, value]: [string, string[]]) => (
-      <details key={key} className="mt-1.5">
+      <details key={key} className="mt-1.5" open>
         <summary className="cursor-pointer">{key}</summary>
         <ul className="pl-4 list-decimal list-inside">
           {value.map((route) => (
