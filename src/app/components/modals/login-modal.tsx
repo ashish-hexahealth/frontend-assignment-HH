@@ -28,6 +28,9 @@ export default function LoginModal({
     if (!mobile) {
       newErrors.mobile = 'Mobile number is required'
     }
+    if (isRequestedOtp && !otp) {
+      newErrors.otp = 'OTP is required'
+    }
     setErrors(newErrors)
 
     // Return true if no errors
@@ -65,7 +68,7 @@ export default function LoginModal({
               err={errors.mobile}
             />
             <button
-              onClick={() => setIsRequestedOtp(true)}
+              onClick={() => validateStep() && setIsRequestedOtp(true)}
               className="bg-blue-500 text-white rounded-md px-4 py-2 mt-4 mx-auto block active:bg-blue-700"
             >
               Send OTP
@@ -81,7 +84,7 @@ export default function LoginModal({
                 setOtp(val)
               }}
               value={otp}
-              err=""
+              err={errors.otp}
             />
             <button
               onClick={verify}
