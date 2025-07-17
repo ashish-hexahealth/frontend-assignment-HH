@@ -37,4 +37,9 @@ type Form2Config = {
 
 type ReviewConfigs = {
   info: string
-} & Form2Config
+  steps: Record<number, Array<FieldConfig>>
+} & Pick<Form2Config, 'heading' | 'submitButtonLabel'>
+
+type LoginConfigs = {
+  steps: Record<number, Array<FieldConfig>>
+} & Pick<Form2Config, 'heading' | 'submitButtonLabel'>
